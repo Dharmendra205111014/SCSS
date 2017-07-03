@@ -1,0 +1,16 @@
+{
+  "name": "css_preprocessor",
+  "version": "1.0.0",
+  "description": "learn scss, less etc",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+      "test": "npm run scss-compile",
+      "scss-compile": "node-scss -r scss/scss -o scss/css",
+      "watch": "npm run scss-compile",
+      "build:scss": "node-sass -w -r scss/scss -o scss/css",
+      "build-scss" : "node-sass scss/scss -o scss/css"
+  },
+  "author": "Dharmendra",
+  "license": "ISC"
+}

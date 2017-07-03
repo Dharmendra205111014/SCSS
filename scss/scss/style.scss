@@ -1,0 +1,55 @@
+/*
+ * npm install -g node-sass
+ * give root access if needed, run sudo npm install -g node-sass in linux/MaxOSX machine
+ * Compile this file using command "node-sass scss_file_directory_path -o compile_css_directory_path"
+ */
+
+@import 'reset.scss';
+@import 'common.scss';
+@import 'mixin.scss';
+
+body {
+  color: $red;
+  font-family: $normalFont;
+  width: $fullWidth*3/4;
+  @extend .blockCenter; 
+}
+
+.container {
+  margin: 10px;
+  border: 1px solid $green;
+  padding: 10px;
+  @include border-radius(10px); 
+  .heading {
+    color: $green;
+    font-size: $headingFontSize;
+  }
+  .paragraph {
+    color: $black;
+    font-size: $paragraphFontSize;
+    @include border-radius();
+    border: 1px solid $red;
+  }
+  .box1 {
+    @extend .inlineBlock;
+    @include spinBox($red);
+    &:hover {
+      @include pause();
+    }
+  }
+  .box2 {
+    @extend .inlineBlock;
+    @include spinBox($green);
+    &:hover {
+      @include pause();
+    }
+  }
+}
+
+.blockCenter {
+  margin: 0px auto;
+}
+
+.inlineBlock {
+  display: inline-block;
+}

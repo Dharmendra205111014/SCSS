@@ -1,0 +1,112 @@
+/*
+ * npm install -g node-sass
+ * give root access if needed, run sudo npm install -g node-sass in linux/MaxOSX machine
+ * Compile this file using command "node-sass scss_file_directory_path -o compile_css_directory_path"
+ */
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0; }
+
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg); }
+  to {
+    -moz-transform: rotate(360deg); } }
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg); } }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+body {
+  color: #FF0000;
+  font-family: arial;
+  width: 75%; }
+
+.container {
+  margin: 10px;
+  border: 1px solid #0F0;
+  padding: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px; }
+  .container .heading {
+    color: #0F0;
+    font-size: 18px; }
+  .container .paragraph {
+    color: #000000;
+    font-size: 12px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #FF0000; }
+  .container .box1 {
+    height: 30px;
+    width: 30px;
+    background-color: #FF0000;
+    margin: 5px;
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 4000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 4000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 4000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; }
+    .container .box1:hover {
+      -webkit-animation-play-state: paused;
+      -moz-animation-play-state: paused;
+      -o-animation-play-state: paused;
+      animation-play-state: paused; }
+  .container .box2 {
+    height: 30px;
+    width: 30px;
+    background-color: #0F0;
+    margin: 5px;
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 4000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 4000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 4000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; }
+    .container .box2:hover {
+      -webkit-animation-play-state: paused;
+      -moz-animation-play-state: paused;
+      -o-animation-play-state: paused;
+      animation-play-state: paused; }
+
+.blockCenter, body {
+  margin: 0px auto; }
+
+.inlineBlock, .container .box1, .container .box2 {
+  display: inline-block; }
